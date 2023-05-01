@@ -6,4 +6,8 @@ double solar_insolation_per_m2 = 4.5 // kilowatt-hours per square meter for an a
 double solar_panel_efficiency = 0.15 // solar power aggregate 15% power efficiency, estimated from https://www.solar-electric.com/learning-center/solar-insolation-maps.html/
 double kilowatthours_per_day = coverage_m2 * solar_insolation_per_m2 * solar_panel_efficiency // expected kilowatt-hours for an average yearly day in Massachusetts, taking into account aggregate solar panel efficiency
 
-print(kilowatthours_per_day)
+
+def formatted_kwh = String.format("%.2f", kilowatthours_per_day)
+println("kW*hr/day = $formatted_kwh")
+//println("${ kilowattHours_per_day * 100.0 / 100.0 }")
+//print("${kilowatthours_per_day.2}\n")
