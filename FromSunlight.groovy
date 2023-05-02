@@ -9,5 +9,3 @@ double kilowatthours_per_day = coverage_m2 * solar_insolation_per_m2 * solar_pan
 
 def formatted_kwh = String.format("%.2f", kilowatthours_per_day)
 println("kW*hr/day = $formatted_kwh")
-//println("${ kilowattHours_per_day * 100.0 / 100.0 }")
-//print("${kilowatthours_per_day.2}\n")
