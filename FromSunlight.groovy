@@ -14,4 +14,4 @@ double power_draw = 0.0				// assumed amountof power in Watts being used to run 
 double growing_kilowatthours_per_day = kilowatthours_per_day - power_draw		//	energy per day used for grow light LEDs
 
 double watt_per_sqft_grow_area = 32 // see Grow Lights: How Many Watts Per Square Foot is Needed? https://trimleaf.com/blogs/articles/grow-lights-how-many-watts-per-plant-square-foot-is-needed#:~:text=Thirty%2Dtwo%20watts%20of%20power,beyond%2040%20per%20square%20foot
-double LED_hrs_per_day = 16
+double LED_hrs_per_day = 16	// see Effect of Extended Photoperiod with a Fixed Mixture of Light Wavelengths on Tomato Seedlings - https://journals.ashs.org/hortsci/view/journals/hortsci/55/11/article-p1832.xml#T2
