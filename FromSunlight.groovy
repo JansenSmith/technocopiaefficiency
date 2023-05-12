@@ -1,5 +1,11 @@
 println()
 double coverage_ft2 = 10000 // roughly the sqft coverage area of makerspace
+
+def formatted_coverage_ft2 = String.format("%.0f", coverage_ft2)
+println("This mathematical model assumes solar panel coverage over $formatted_coverage_ft2 sqft.")
+println()
+
+
 double feet_per_meter = 3.28084
 double coverage_m2 = coverage_ft2 / Math.pow(feet_per_meter,2)	// coverage area in m^2 of solar panels
 double solar_insolation_per_m2 = 4.5 // kilowatt-hours per square meter for an average yearly day in Massachusetts, estimated from https://www.solar-electric.com/learning-center/solar-insolation-maps.html/
