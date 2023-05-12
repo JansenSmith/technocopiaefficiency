@@ -28,7 +28,7 @@ double m2_grow_area = kilowatthours_per_day_generated / kilowatthours_per_day_co
 def formatted_m2_grow_area = String.format("%.2f", m2_grow_area)
 println("sustainable grow area in m^2 = $formatted_m2_grow_area")
 
-double carrot_plants_per_sqft_grow_area = 256	// plants/sqft - see How Much Can You Really Grow in a 4ft. x 4ft. Raised Bed? - https://www.gardenary.com/blog/how-much-can-you-really-grow-in-a-4ft-x-4ft-raised-bed
+double carrot_plants_per_sqft_grow_area = 16	// plants/sqft - see How Much Can You Really Grow in a 4ft. x 4ft. Raised Bed? - https://www.gardenary.com/blog/how-much-can-you-really-grow-in-a-4ft-x-4ft-raised-bed
 double carrot_plants_per_m2_grow_area = carrot_plants_per_sqft_grow_area * Math.pow(feet_per_meter,2) // plants/m^2
 double carrot_grow_days = 80
 double carrot_lbs_harvest_per_plant = 0.2
