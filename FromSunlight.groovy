@@ -15,7 +15,7 @@ double kilowatthours_per_day_generated = coverage_m2 * solar_insolation_per_m2 *
 def formatted_kwh = String.format("%.2f", kilowatthours_per_day_generated)
 println("kW*hr/day generated = $formatted_kwh")
 
-double power_draw = 0.0				// assumed amountof power in Watts being used to run the robots et the building et al
+double power_draw = 0.0				// assumed amount of power in Watts being used to run the robots et the building et al
 double growing_kilowatthours_per_day = kilowatthours_per_day_generated - power_draw		//	kW*hr/day - energy per day used for grow light LEDs
 
 double watts_per_sqft_grow_area = 32 // see Grow Lights: How Many Watts Per Square Foot is Needed? - https://trimleaf.com/blogs/articles/grow-lights-how-many-watts-per-plant-square-foot-is-needed#:~:text=Thirty%2Dtwo%20watts%20of%20power,beyond%2040%20per%20square%20foot
